@@ -13,6 +13,6 @@ library(tidyverse)
 # code --------------------------------------------------------------------
 
 mtcars %>% 
-  ggplot(aes(y = mpg, x = cyl, group = cyl)) +
+  ggplot(aes(y = mpg, x = cyl, group = cyl, color = factor(cyl))) +
   geom_boxplot() +
   geom_point()
