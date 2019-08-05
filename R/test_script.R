@@ -15,4 +15,4 @@ library(tidyverse)
 mtcars %>% 
   ggplot(aes(y = mpg, x = cyl, group = cyl, color = factor(cyl))) +
   geom_boxplot() +
-  geom_point() 
+  geom_point()
