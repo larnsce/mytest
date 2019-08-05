@@ -12,5 +12,6 @@ library(tidyverse)
 
 # code --------------------------------------------------------------------
 
-
-
+mtcars %>% 
+  ggplot(aes(y = mpg, x = cyl, group = cyl)) +
+  geom_boxplot()
