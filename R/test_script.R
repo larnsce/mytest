@@ -14,4 +14,5 @@ library(tidyverse)
 
 mtcars %>% 
   ggplot(aes(y = mpg, x = cyl, group = cyl)) +
-  geom_boxplot()
+  geom_boxplot() +
+  geom_point()
